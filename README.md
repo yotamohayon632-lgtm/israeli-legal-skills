@@ -1,3 +1,14 @@
+# israeli-legal-skills
+
+Two Agent Skills for Claude, written in Hebrew, for civil litigation work in Israel:
+
+- **takanot-2018**: the practical rules of Israel's Civil Procedure Regulations, 2018. Document structure and page limits, filing deadlines, counting of days and court recesses, and sanctions, with the full text of the regulations bundled as reference.
+- **human-hebrew-writing**: rules for Hebrew writing that does not read as AI-generated text.
+
+The skills and the rest of this page are in Hebrew. Not legal advice.
+
+---
+
 # סקילים ל-Claude לעבודה משפטית בעברית
 
 שני סקילים (Agent Skills) לעורכי דין שעובדים עם Claude בעברית, בליטיגציה אזרחית בישראל.
@@ -11,7 +22,15 @@
 
 ## התקנה
 
-ב-Claude Code מעתיקים את תיקיית הסקיל לתיקיית הסקילים האישית, או לתיקיית הסקילים של פרויקט מסוים:
+ב-Claude Code מוסיפים את המאגר כחנות תוספים ומתקינים את הסקיל הרצוי:
+
+```
+/plugin marketplace add yotamohayon632-lgtm/israeli-legal-skills
+/plugin install takanot-2018@israeli-legal-skills
+/plugin install human-hebrew-writing@israeli-legal-skills
+```
+
+אפשר גם להעתיק ידנית את תיקיית הסקיל לתיקיית הסקילים האישית, או לתיקיית הסקילים של פרויקט מסוים:
 
 ```bash
 git clone https://github.com/yotamohayon632-lgtm/israeli-legal-skills.git

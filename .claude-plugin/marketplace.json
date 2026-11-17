@@ -1,0 +1,26 @@
+{
+  "name": "israeli-legal-skills",
+  "owner": {
+    "name": "Yotam Ohayon"
+  },
+  "metadata": {
+    "description": "Claude skills for Hebrew-language civil litigation work in Israel",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "takanot-2018",
+      "description": "The practical rules of Israel's Civil Procedure Regulations, 2018 (in Hebrew): document structure and page limits, deadlines, counting of days and court recesses, and sanctions. Includes the full text, a deadlines table, per-document checklists and open interpretation questions.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/takanot-2018"]
+    },
+    {
+      "name": "human-hebrew-writing",
+      "description": "Rules for Hebrew writing that does not read as AI-generated: words and structures that give a model away, punctuation and formatting rules, and a pre-delivery check.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/human-hebrew-writing"]
+    }
+  ]
+}
